@@ -18,5 +18,9 @@ describe('project-euler-lib', function() {
     it('number 222 is not a prime number', function() {
       expect(projectEulerLib.isPrimeNumber(222)).to.equal(false);
     });
+
+    it('number 829 is a prime number', function() {
+      expect(projectEulerLib.isPrimeNumber(829)).to.equal(true);
+    })
   });
 });

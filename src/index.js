@@ -1,6 +1,8 @@
 var isPrimeNumber = function(number) {
-  for (var i = number - 1; i > 1; i--) {
-    if (number % i === 0) {
+  var start = number - Math.floor(number / 2);
+
+  for (start; start > 1; start--) {
+    if (number % start === 0) {
       return false;
     }
   }
