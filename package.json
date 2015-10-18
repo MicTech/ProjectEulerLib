@@ -1,0 +1,26 @@
+{
+  "name": "project-euler-lib",
+  "version": "1.0.0",
+  "description": "Library helps to solve Project Euler problems",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha src/index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicTech/ProjectEulerLib.git"
+  },
+  "keywords": [
+    "project euler"
+  ],
+  "author": "Michal Tehnik <michal.tehnik@mictech.cz> (http://mictech.cz/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MicTech/ProjectEulerLib/issues"
+  },
+  "homepage": "https://github.com/MicTech/ProjectEulerLib#readme",
+  "devDependencies": {
+    "chai": "3.3.0",
+    "mocha": "2.3.3"
+  }
+}
