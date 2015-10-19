@@ -10,6 +10,17 @@ var isPrimeNumber = function(number) {
   return true;
 };
 
+var generateNumberSequence = function(start, end) {
+  var numbers = [];
+
+  for (var i = start; i < end + 1; i++) {
+    numbers.push(i);
+  }
+
+  return numbers;
+}
+
 module.exports = {
-  isPrimeNumber: isPrimeNumber
+  isPrimeNumber: isPrimeNumber,
+  generateNumberSequence: generateNumberSequence
 };
