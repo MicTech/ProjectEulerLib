@@ -21,7 +21,21 @@ describe('project-euler-lib', function() {
 
     it('number 829 is a prime number', function() {
       expect(projectEulerLib.isPrimeNumber(829)).to.equal(true);
-    })
+    });
+  });
+
+  describe('isPrimeNumberWithListOfPrimeNumbers', function() {
+    it('number 3 is a prime number', function() {
+      expect(projectEulerLib.isPrimeNumberWithListOfPrimeNumbers(3, [2]));
+    });
+
+    it('number 3 is a prime number', function() {
+      expect(projectEulerLib.isPrimeNumberWithListOfPrimeNumbers(4, [2, 3]));
+    });
+
+    it('number 3 is a prime number', function() {
+      expect(projectEulerLib.isPrimeNumberWithListOfPrimeNumbers(103, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107]));
+    });
   });
 
   describe('generateNumberSequence', function() {

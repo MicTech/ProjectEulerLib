@@ -1,6 +1,6 @@
 {
   "name": "project-euler-lib",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Library helps to solve Project Euler problems",
   "main": "src/index.js",
   "scripts": {

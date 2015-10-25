@@ -10,6 +10,20 @@ var isPrimeNumber = function(number) {
   return true;
 };
 
+var isPrimeNumberWithListOfPrimeNumbers = function(number, primeNumbers) {
+  if(number === 2) {
+    return true;
+  }
+
+  for (var i = 0; i < primeNumbers.length; i++) {
+    if(number % primeNumbers[i] === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
 var generateNumberSequence = function(start, end) {
   var numbers = [];
 
@@ -22,5 +36,6 @@ var generateNumberSequence = function(start, end) {
 
 module.exports = {
   isPrimeNumber: isPrimeNumber,
+  isPrimeNumberWithListOfPrimeNumbers: isPrimeNumberWithListOfPrimeNumbers,
   generateNumberSequence: generateNumberSequence
 };
